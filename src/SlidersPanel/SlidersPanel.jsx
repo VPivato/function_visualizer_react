@@ -1,14 +1,11 @@
 import styles from "./SlidersPanel.module.css";
-import parameters from "../functions_parameters.json";
 
-function SlidersPanel() {
+function SlidersPanel(props) {
   return (
     <>
-      {parameters.Linear.map((e) => (
-        <div className={styles.sliderWrapper}>
-          <label htmlFor={e.id} key={e.id}>
-            {e.label}
-          </label>
+      {props.parameters.map((e) => (
+        <div className={styles.sliderWrapper} key={e.id}>
+          <label htmlFor={e.id}>{e.label}</label>
           <input type="range" id={e.id} />
         </div>
       ))}

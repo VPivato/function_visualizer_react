@@ -2,6 +2,30 @@
     "Linear": [
         {
             "id": 1,
+            "label": "a"
+        },
+        {
+            "id": 2,
+            "label": "b"
+        }
+    ],
+    "Quadratic": [
+        {
+            "id": 1,
+            "label": "a"
+        },
+        {
+            "id": 2,
+            "label": "b"
+        },
+        {
+            "id": 3,
+            "label": "c"
+        }
+    ],
+    "Sin": [
+        {
+            "id": 1,
             "label": "A"
         },
         {
@@ -11,8 +35,10 @@
         {
             "id": 3,
             "label": "C"
+        },
+        {
+            "id": 4,
+            "label": "D"
         }
-    ],
-    "Quadratic": [],
-    "Sin": []
+    ]
 }

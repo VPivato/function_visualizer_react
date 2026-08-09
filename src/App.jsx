@@ -4,8 +4,16 @@ import SlidersPanel from "./SlidersPanel/SlidersPanel";
 import Header from "./Header/Header";
 
 import styles from "./App.module.css";
+import parameters from "./functions_parameters.json";
+
+import { useState } from "react";
 
 function App() {
+  const [functionType, setFunctionType] = useState("Linear");
+  function handleChange(event) {
+    setFunctionType(event.target.value);
+  }
+
   return (
     <main className={styles.main}>
       <Header />
@@ -14,8 +22,11 @@ function App() {
           <GraphCanvas />
         </div>
         <div className={styles.right}>
-          <FunctionSelector />
-          <SlidersPanel />
+          <FunctionSelector
+            options={Object.keys(parameters)}
+            handleChange={handleChange}
+          />
+          <SlidersPanel parameters={parameters[functionType]} />
         </div>
       </div>
     </main>
