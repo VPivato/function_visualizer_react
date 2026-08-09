@@ -1,0 +1,12 @@
+:root {
+    --bg: #EEE;
+    --surface: #E6E6E6;
+    --surface-darker: #E0E0E0;
+    --surface-lighter: #EAEAEA;
+    --header: #dfdfe9;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --accent: #6366F1;
+    --graph-curve: #14B8A6;
+    --error: #F43F5E;
+}

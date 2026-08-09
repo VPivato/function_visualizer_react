@@ -1,0 +1,26 @@
+@import url(../variables.css);
+
+.selectorWrapper {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 22px;
+    display: block;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.dropdown {
+    width: 100%;
+    font-size: 22px;
+    border: none;
+    border-bottom: 2px solid var(--accent);
+    color: var(--accent);
+    outline: none;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    border-radius: 5px 5px 0 0;
+}

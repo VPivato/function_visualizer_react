@@ -1,0 +1,19 @@
+@import url(../variables.css);
+
+.sliderWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px 5px;
+}
+
+.sliderWrapper > label {
+    font-size: 20px;
+    width: 100%;
+    color: var(--text-secondary);
+}
+
+.sliderWrapper > input {
+    width: 100%;
+    accent-color: var(--accent);
+}
