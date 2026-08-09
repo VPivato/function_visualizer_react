@@ -1,0 +1,18 @@
+{
+    "Linear": [
+        {
+            "id": 1,
+            "label": "A"
+        },
+        {
+            "id": 2,
+            "label": "B"
+        },
+        {
+            "id": 3,
+            "label": "C"
+        }
+    ],
+    "Quadratic": [],
+    "Sin": []
+}

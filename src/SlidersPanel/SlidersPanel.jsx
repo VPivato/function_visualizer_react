@@ -1,20 +1,17 @@
 import styles from "./SlidersPanel.module.css";
+import parameters from "../functions_parameters.json";
 
 function SlidersPanel() {
   return (
     <>
-      <div className={styles.sliderWrapper}>
-        <label htmlFor="1">A: 0.00</label>
-        <input type="range" name="i1" id="1" />
-      </div>
-      <div className={styles.sliderWrapper}>
-        <label htmlFor="2">B: 0.00</label>
-        <input type="range" name="i2" id="2" />
-      </div>
-      <div className={styles.sliderWrapper}>
-        <label htmlFor="3">C: 0.00</label>
-        <input type="range" name="i2" id="2" />
-      </div>
+      {parameters.Linear.map((e) => (
+        <div className={styles.sliderWrapper}>
+          <label htmlFor={e.id} key={e.id}>
+            {e.label}
+          </label>
+          <input type="range" id={e.id} />
+        </div>
+      ))}
     </>
   );
 }

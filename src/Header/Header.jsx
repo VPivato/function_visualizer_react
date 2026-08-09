@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 
-function SlidersPanel() {
+function Header() {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>Function Visualizer</h1>
@@ -8,4 +8,4 @@ function SlidersPanel() {
   );
 }
 
-export default SlidersPanel;
+export default Header;
