@@ -1,43 +1,43 @@
 {
     "Linear": [
         {
-            "id": 1,
+            "id": "linear-1",
             "label": "a"
         },
         {
-            "id": 2,
+            "id": "linear-2",
             "label": "b"
         }
     ],
     "Quadratic": [
         {
-            "id": 1,
+            "id": "quadratic-1",
             "label": "a"
         },
         {
-            "id": 2,
+            "id": "quadratic-2",
             "label": "b"
         },
         {
-            "id": 3,
+            "id": "quadratic-3",
             "label": "c"
         }
     ],
     "Sin": [
         {
-            "id": 1,
+            "id": "sin-1",
             "label": "A"
         },
         {
-            "id": 2,
+            "id": "sin-2",
             "label": "B"
         },
         {
-            "id": 3,
+            "id": "sin-3",
             "label": "C"
         },
         {
-            "id": 4,
+            "id": "sin-4",
             "label": "D"
         }
     ]

@@ -9,8 +9,8 @@ import parameters from "./functions_parameters.json";
 import { useState } from "react";
 
 function App() {
-  const [functionType, setFunctionType] = useState("Linear");
-  function handleChange(event) {
+  const [functionType, setFunctionType] = useState(Object.keys(parameters)[0]);
+  function onChange(event) {
     setFunctionType(event.target.value);
   }
 
@@ -24,7 +24,8 @@ function App() {
         <div className={styles.right}>
           <FunctionSelector
             options={Object.keys(parameters)}
-            handleChange={handleChange}
+            value={functionType}
+            onChange={onChange}
           />
           <SlidersPanel parameters={parameters[functionType]} />
         </div>

@@ -9,7 +9,8 @@ function FunctionSelector(props) {
       <select
         className={styles.dropdown}
         id="dropdown"
-        onChange={props.handleChange}
+        value={props.value}
+        onChange={props.onChange}
       >
         {props.options.map((e) => (
           <option value={e} key={e}>
