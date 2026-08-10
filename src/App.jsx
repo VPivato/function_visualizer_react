@@ -10,8 +10,28 @@ import { useState } from "react";
 
 function App() {
   const [functionType, setFunctionType] = useState(Object.keys(parameters)[0]);
-  function onChange(event) {
-    setFunctionType(event.target.value);
+  function handleFuntionTypeChange(event) {
+    const newFunctionType = event.target.value;
+
+    setFunctionType(newFunctionType);
+    setParametersValues(getDefaultParameters(newFunctionType));
+  }
+
+  const [parametersValues, setParametersValues] = useState(
+    getDefaultParameters(functionType),
+  );
+
+  function getDefaultParameters(functionType) {
+    return Object.fromEntries(
+      parameters[functionType].map((param) => [param.id, param.default]),
+    );
+  }
+
+  function handleParameterChange(id, value) {
+    setParametersValues((current) => ({
+      ...current,
+      [id]: Number(value),
+    }));
   }
 
   return (
@@ -25,9 +45,13 @@ function App() {
           <FunctionSelector
             options={Object.keys(parameters)}
             value={functionType}
-            onChange={onChange}
+            handleFuntionTypeChange={handleFuntionTypeChange}
           />
-          <SlidersPanel parameters={parameters[functionType]} />
+          <SlidersPanel
+            parameters={parameters[functionType]}
+            parametersValues={parametersValues}
+            handleParameterChange={handleParameterChange}
+          />
         </div>
       </div>
     </main>

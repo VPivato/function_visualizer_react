@@ -2,43 +2,79 @@
     "Linear": [
         {
             "id": "linear-1",
-            "label": "a"
+            "label": "a",
+            "min": -10,
+            "max": 10,
+            "default": 1,
+            "step": 0.1
         },
         {
             "id": "linear-2",
-            "label": "b"
+            "label": "b",
+            "min": -10,
+            "max": 10,
+            "default": 0,
+            "step": 0.1
         }
     ],
     "Quadratic": [
         {
             "id": "quadratic-1",
-            "label": "a"
+            "label": "a",
+            "min": -10,
+            "max": 10,
+            "default": 1,
+            "step": 0.1
         },
         {
             "id": "quadratic-2",
-            "label": "b"
+            "label": "b",
+            "min": -10,
+            "max": 10,
+            "default": 0,
+            "step": 0.1
         },
         {
             "id": "quadratic-3",
-            "label": "c"
+            "label": "c",
+            "min": -10,
+            "max": 10,
+            "default": 0,
+            "step": 0.1
         }
     ],
     "Sin": [
         {
             "id": "sin-1",
-            "label": "A"
+            "label": "A",
+            "min": -10,
+            "max": 10,
+            "default": 0,
+            "step": 0.1
         },
         {
             "id": "sin-2",
-            "label": "B"
+            "label": "B",
+            "min": -10,
+            "max": 10,
+            "default": 0,
+            "step": 0.1
         },
         {
             "id": "sin-3",
-            "label": "C"
+            "label": "C",
+            "min": -10,
+            "max": 10,
+            "default": 0,
+            "step": 0.1
         },
         {
             "id": "sin-4",
-            "label": "D"
+            "label": "D",
+            "min": -10,
+            "max": 10,
+            "default": 0,
+            "step": 0.1
         }
     ]
 }
