@@ -10,7 +10,7 @@ import { useState } from "react";
 
 function App() {
   const [functionType, setFunctionType] = useState(Object.keys(parameters)[0]);
-  function handleFuntionTypeChange(event) {
+  function handleFunctionTypeChange(event) {
     const newFunctionType = event.target.value;
 
     setFunctionType(newFunctionType);
@@ -45,7 +45,7 @@ function App() {
           <FunctionSelector
             options={Object.keys(parameters)}
             value={functionType}
-            handleFuntionTypeChange={handleFuntionTypeChange}
+            handleFunctionTypeChange={handleFunctionTypeChange}
           />
           <SlidersPanel
             parameters={parameters[functionType]}

@@ -10,7 +10,7 @@ function FunctionSelector(props) {
         className={styles.dropdown}
         id="dropdown"
         value={props.value}
-        onChange={props.handleFuntionTypeChange}
+        onChange={props.handleFunctionTypeChange}
       >
         {props.options.map((e) => (
           <option value={e} key={e}>
