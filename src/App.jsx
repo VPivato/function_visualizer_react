@@ -1,10 +1,11 @@
 import FunctionSelector from "./FunctionSelector/FunctionSelector";
-import GraphCanvas from "./GraphCanvas/GraphCanvas";
+import GraphView from "./GraphView/GraphView";
 import SlidersPanel from "./SlidersPanel/SlidersPanel";
 import Header from "./Header/Header";
 
 import styles from "./App.module.css";
 import parameters from "./functions_parameters.json";
+import returnPoints from "./math_functions";
 
 import { useState } from "react";
 
@@ -34,12 +35,16 @@ function App() {
     }));
   }
 
+  // console.log(
+  //   returnPoints(0, 10, 1, Object.entries(parametersValues), functionType),
+  // );
+
   return (
     <main className={styles.main}>
       <Header />
       <div className={styles.content}>
         <div className={styles.left}>
-          <GraphCanvas />
+          <GraphView />
         </div>
         <div className={styles.right}>
           <FunctionSelector
