@@ -28,16 +28,21 @@ function App() {
     );
   }
 
+  function parametersIdToLabel(functionType) {
+    return Object.fromEntries(
+      parameters[functionType].map((param) => [
+        param.label.toLowerCase(),
+        parametersValues[param.id],
+      ]),
+    );
+  }
+
   function handleParameterChange(id, value) {
     setParametersValues((current) => ({
       ...current,
       [id]: Number(value),
     }));
   }
-
-  // console.log(
-  //   returnPoints(0, 10, 1, Object.entries(parametersValues), functionType),
-  // );
 
   return (
     <main className={styles.main}>

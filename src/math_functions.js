@@ -1,14 +1,16 @@
 
+const functionRegistry = {
+    Linear: (x, param) =>
+        param.a * x + param.b,
+    Quadratic: (x, param) =>
+        param.a * Math.pow(x, 2) + param.b * x + param.c,
+    Sin: (x, param) =>
+        param.a * Math.sin(param.b * x + param.c) + param.d
+}
+
 function returnY(x, parameters, functionType) {
-    if (functionType == "Linear") {
-        return parameters[0][1] * x + parameters[1][1]
-    }
-    else if (functionType == "Quadratic") {
-        return parameters[0][1] * Math.pow(x, 2) + parameters[1][1] * x + parameters[2][1]
-    }
-    else if (functionType == "Sin") {
-        return parameters[0][1] * Math.sin(parameters[1][1] * x + parameters[2][1]) + parameters[3][1]
-    }
+   const f = functionRegistry[functionType]
+   return f(x, parameters)
 }
 
 function returnPoints(start, end, step, parameters, functionType) {
